@@ -11,9 +11,13 @@ RUN wget -O /drpbx/dropbox.py "https://www.dropbox.com/download?dl=packages/drop
 RUN cd /drpbx && tar -xvzf dropbox.tar.gz
 RUN rm /drpbx/dropbox.tar.gz
 RUN chmod -R 777 /drpbx/
+RUN chmod -R 777 /root/.dropbox/
+RUN chmod -R 777 /root/Dropbox/
 
 VOLUME /drpbx/.dropbox-dist
 VOLUME /drpbx/.dropbox
 VOLUME /drpbx/Dropbox
+VOLUME /root/.dropbox
+VOLUME /root/Dropbox/
 
 ENTRYPOINT ["/drpbx/.dropbox-dist/dropboxd"] 
