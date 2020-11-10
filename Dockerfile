@@ -10,7 +10,7 @@ RUN wget -O /drpbx/dropbox.tar.gz "http://www.dropbox.com/download/?plat=lnx.x86
 RUN wget -O /drpbx/dropbox.py "https://www.dropbox.com/download?dl=packages/dropbox.py"
 RUN cd /drpbx && tar -xvzf dropbox.tar.gz
 RUN rm /drpbx/dropbox.tar.gz
-
+RUN chmod -R a+rx /drpbx/
 
 VOLUME /drpbx/.dropbox-dist
 VOLUME /drpbx/Dropbox
