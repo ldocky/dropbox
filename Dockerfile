@@ -13,6 +13,7 @@ RUN rm /drpbx/dropbox.tar.gz
 RUN chmod -R 777 /drpbx/
 
 VOLUME /drpbx/.dropbox-dist
+VOLUME /drpbx/.dropbox
 VOLUME /drpbx/Dropbox
 
 ENTRYPOINT ["/drpbx/.dropbox-dist/dropboxd"] 
