@@ -22,4 +22,4 @@ VOLUME /drpbx/Dropbox
 VOLUME /root/.dropbox
 VOLUME /root/Dropbox/
 
-ENTRYPOINT ["/drpbx/.dropbox-dist/dropboxd"] 
+ENTRYPOINT ["HOME=/drpbx", "/drpbx/.dropbox-dist/dropboxd"] 
