@@ -8,4 +8,5 @@ RUN apt-get update && apt-get install -y wget psmisc curl libatomic1 libglib2.0-
 RUN wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf /tmp/dropbox-dist
 RUN wget https://www.dropbox.com/download?dl=packages/dropbox.py -O /temp/dropbox-cli 
 
+
 ENTRYPOINT ["/temp/dropbox-dist/dropboxd"] 
