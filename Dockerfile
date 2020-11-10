@@ -15,4 +15,4 @@ RUN rm /tmp/dropbox-dist/dropbox.tar.gz
 VOLUME /tmp/dropbox-dist/.dropbox
 VOLUME /tmp/dropbox-dist/Dropbox
 
-ENTRYPOINT ["/temp/dropbox-dist/dropboxd"] 
+ENTRYPOINT ["/tmp/dropbox-dist/dropboxd"] 
